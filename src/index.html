@@ -42,6 +42,31 @@
     <section id="projects" class="my-16 w-4/5 md:w-3/5 mx-auto">
         <h2 class="text-3xl font-bold text-center mb-8">My Projects</h2>
         <div class="space-y-10">
+            <!-- Project 0 -->
+            <div class="bg-white rounded-lg shadow-lg p-6 flex flex-col md:flex-row items-center md:w-full min-w-[300px]">
+                <!-- Left Image -->
+                <div class="flex-shrink-0 md:mr-6 mb-4 md:mb-0 w-32 h-32 flex items-center justify-center bg-white rounded-lg overflow-hidden">
+                    <img src="./images/ScrapalotFullTextLogo.png" class="max-w-full max-h-full object-contain">
+                </div>
+                <!-- Tile Content -->
+                <div class="text-center md:text-left flex-1">
+                    <h3 class="text-2xl font-semibold mb-2">Scrapalot: The Go-To Scrapbooking Platform</h3>
+                    <a href="https://scrapalot.com" target="_blank" class="text-blue-500 hover:text-blue-600 mb-5">Visit Scrapalot</a>
+                    <p class="text-gray-700 mb-2">The go-to scrapbooking platform that allows you to upload scraps to share with others and then place them into your own custom scrapbooks for inspiration and creativity. </p>
+                    <p class="text-gray-700 mb-2"> This is a full-stack web application relying on Next.js 14 with TypeScript, incorporating both server and client components to balance performance and interactivity. </p>
+                    <p class="text-gray-700 mb-2"> On the backend, Supabase handles secure authentication, real-time database capabilities, and efficient data management for holding scrap data, user information, etc. For context, custom-made context providers were made (e.g., UserContext, ScrapContext) for efficient global state management. Furthermore, there is implementation of React patterns such as higher-order components and custom hooks to handle when a user should be redirected to the login page (if not logged in). The user interface is built with Tailwind CSS to offer a responsive and dynamic experience.</p>
+                    <p class="text-gray-700 mb-2"> Additionally, important parts of the application such as form handling (with react-hook-form), comprehensive error handling, and performance optimization techniques such as lazy loading and code splitting have been accounted for. Security best practices were applied (e.g., protected routes and secure environment variable management). </p>
+                    <p class="text-gray-700 mb-2"> Ultimately, throughout the development process, I demonstrated expertise in API development, version control with Git, and preparation for production deployment, resulting in a polished, high-performance web application ready for real-world use.</p>
+                    <div class="mt-4 pt-4 border-t border-gray-200">
+                        <h4 class="text-sm font-semibold text-gray-700">Technologies Used:</h4>
+                        <p class="text-sm text-gray-600 mb-2">Next.js 14 TypeScript, React, Supabase, Tailwind CSS, Git, Vercel</p>
+                        <h4 class="text-sm font-semibold text-gray-700">Concepts Applied:</h4>
+                        <p class="text-sm text-gray-600">Full-Stack Next.js Application Development, Server-side rendering and client-side navigation, Server components and client components, Authentication and Authorization, Custom auth providers and hooks, State Management and Context API, Database Integration and ORM, Real-time database capabilities, Data fetching and caching strategies, Advanced React Patterns (HOCs, custom hooks), Responsive UI Development, Form Handling and Validation, Error Handling and Logging, Performance Optimization (lazy loading, code splitting), Security Best Practices, API Development, RESTful APIs, Version Control, Code organization and modularization, Deployment and DevOps, Environment-specific settings, Error boundaries and fallback UI</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="space-y-10">
             <!-- Project 1 -->
             <div class="bg-white rounded-lg shadow-lg p-6 flex flex-col md:flex-row items-center md:w-full min-w-[300px]">
                 <!-- Left Image -->
@@ -51,7 +76,11 @@
                 <!-- Tile Content -->
                 <div class="text-center md:text-left flex-1">
                     <h3 class="text-2xl font-semibold mb-2">Comprehensive Regression Model Performance Evaluation</h3>
-                    <p class="text-gray-700">Evaluates multiple regression models including Lasso, Ridge, Decision Tree, Random Forest, and Neural Network on a .csv dataset containing stock returns using Python (libraries: pandas, numpy, sklearn (linear_model and metrics)). Implements shrinkage techniques for Lasso and Ridge, compares their MSEs, and analyzes model performance. Trains and predicts using Decision Tree, Random Forest, and Neural Network, assessing their MSEs and model depths to determine the most effective approach.</p>
+                    <p class="text-gray-700 mb-2">Evaluates multiple regression models including Lasso, Ridge, Decision Tree, Random Forest, and Neural Network on a .csv dataset containing stock returns using Python (libraries: pandas, numpy, sklearn (linear_model and metrics)). Implements shrinkage techniques for Lasso and Ridge, compares their MSEs, and analyzes model performance. Trains and predicts using Decision Tree, Random Forest, and Neural Network, assessing their MSEs and model depths to determine the most effective approach.</p>
+                    <div class="mt-4 pt-4 border-t border-gray-200">
+                        <h4 class="text-sm font-semibold text-gray-700">Technologies Used:</h4>
+                        <p class="text-sm text-gray-600">Python, Pandas, NumPy, Scikit-learn</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -66,7 +95,11 @@
                 <!-- Tile Content -->
                 <div class="text-center md:text-left flex-1">
                     <h3 class="text-2xl font-semibold mb-2">Texas InventionWorks 3D Print Job Software Manager</h3>
-                    <p class="text-gray-700">Manages 3D print jobs within a budget, optimizing for high-quality prints using queues and hash tables using Python. Allows selection of detail and material. Utilizes the knapsack algorithm to maximize output, reviewing and simulating jobs based on budget constraints.</p>
+                    <p class="text-gray-700 mb-2">Manages 3D print jobs within a budget, optimizing for high-quality prints using queues and hash tables using Python. Allows selection of detail and material. Utilizes the knapsack algorithm to maximize output, reviewing and simulating jobs based on budget constraints.</p>
+                    <div class="mt-4 pt-4 border-t border-gray-200">
+                        <h4 class="text-sm font-semibold text-gray-700">Technologies Used:</h4>
+                        <p class="text-sm text-gray-600">Python</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -81,7 +114,11 @@
                 <!-- Tile Content -->
                 <div class="text-center md:text-left flex-1">
                     <h3 class="text-2xl font-semibold mb-2">DeFi Protocol Cost of Equity Derivation</h3>
-                    <p class="text-gray-700">Downloads 5 years of stock data for SPY and AAVE, computes daily returns, and renames columns using Python (libraries: yfinance, pandas, statsmodels). Utilizes advanced regression analysis to derive AAVE's beta relative to SPY. Applies the CAPM formula to precisely calculate the cost of equity, enhancing investment decision-making for DeFi protocols.</p>
+                    <p class="text-gray-700 mb-2">Downloads 5 years of stock data for SPY and AAVE, computes daily returns, and renames columns using Python (libraries: yfinance, pandas, statsmodels). Utilizes advanced regression analysis to derive AAVE's beta relative to SPY. Applies the CAPM formula to precisely calculate the cost of equity, enhancing investment decision-making for DeFi protocols.</p>
+                    <div class="mt-4 pt-4 border-t border-gray-200">
+                        <h4 class="text-sm font-semibold text-gray-700">Technologies Used:</h4>
+                        <p class="text-sm text-gray-600">Python, YFinance, Pandas, Statsmodels</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -96,8 +133,12 @@
                 <!-- Tile Content -->
                 <div class="text-center md:text-left flex-1">
                     <h3 class="text-2xl font-semibold mb-2">Web Swinging Simulation with Dynamic Physics and Momentum</h3>
-                    <p class="text-gray-700">Engineered a Lua-based web swinging simulation, featuring dynamic rope creation and in-engine physics to enable realistic swinging between buildings. Utilized custom attachments and force application logic, including vector force momentum and rope constraints, ensuring accurate attachment to the player's torso. Comprehensive checks for valid targets, distance constraints, and custom animations.
+                    <p class="text-gray-700 mb-2">Engineered a Lua-based web swinging simulation, featuring dynamic rope creation and in-engine physics to enable realistic swinging between buildings. Utilized custom attachments and force application logic, including vector force momentum and rope constraints, ensuring accurate attachment to the player's torso. Comprehensive checks for valid targets, distance constraints, and custom animations.
                     </p>
+                    <div class="mt-4 pt-4 border-t border-gray-200">
+                        <h4 class="text-sm font-semibold text-gray-700">Technologies Used:</h4>
+                        <p class="text-sm text-gray-600">Lua</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -112,7 +153,11 @@
                 <!-- Tile Content -->
                 <div class="text-center md:text-left flex-1">
                     <h3 class="text-2xl font-semibold mb-2">Mass E-Mail Automation Application Using Gmail API</h3>
-                    <p class="text-gray-700">Developed a JavaScript application leveraging the Gmail API to draft and schedule customizable emails, automating the process of sending 125+ marketing emails weekly. Saved over 20 hours per week and achieved a follow-on conversion rate of ~11%. Enhanced lead conversion performance by 10% through tailored customizability options specific to various industries.</p>
+                    <p class="text-gray-700 mb-2">Developed a JavaScript application leveraging the Gmail API to draft and schedule customizable emails, automating the process of sending 125+ marketing emails weekly. Saved over 20 hours per week and achieved a follow-on conversion rate of ~11%. Enhanced lead conversion performance by 10% through tailored customizability options specific to various industries.</p>
+                    <div class="mt-4 pt-4 border-t border-gray-200">
+                        <h4 class="text-sm font-semibold text-gray-700">Technologies Used:</h4>
+                        <p class="text-sm text-gray-600">JavaScript, Gmail API</p>
+                    </div>
                 </div>
             </div>
         </div>
